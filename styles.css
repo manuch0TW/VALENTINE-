@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: deeppink;
+    background-image: url('valentine.jpeg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color:black
+    
+}   
+
+button {
+    background-color: hotpink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+
+}
+
+button:hover {
+    background-color: deeppink;
+}
+
+#noBtn {
+    background-color: gray;
+}
+#noBtn:hover {
+    background-color: gray;
+}
+#sadHearts {
+    font-size: 48px;
+    animation: shake 1s ease-in-out;
+}
+@keyframes shake {
+    0%, 100%{ transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+.hidden {
+    display: none;
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 24px;
+    animation: float 4s
+}
+
+@keyframes float {
+    0% {transform: translateY(0); opacity: 1;}
+        50% {     transform: translateY(-200px); opacity: 0.5;}
+        100% { transform: translate(0); opacity: 1;} 
+    
+}
